@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - InkZone Tattoo</title>
+    <link rel="stylesheet" href="web_tattoo.css">
+</head>
+<body>
+    <header>
+        <h1>InkZone Tattoo</h1>
+        <nav>
+            <ul>
+                <li><a href="web_tattoo.html">Inicio</a></li>
+                <li><a href="#blackwork">Blackwork</a></li>
+                <li><a href="#color">Color</a></li>
+                <li><a href="#minimalista">Minimalista</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="galeria-page">
+        <h2>Galería completa de diseños</h2>
+
+        <!-- Categoría Blackwork -->
+        <section class="categoria" id="blackwork">
+            <button class="toggle-btn">Blackwork ▾</button>
+            <div class="desplegable">
+                <div class="tattoo-card">
+                    <img src="img/tattoo_brazo.jpg" alt="Tattoo león en blanco y negro con estilo griego">
+                    <img src="img/tattoo_brazo_2.jpg" alt="Tattoo lobo y flores en blanco y negro">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Categoria Color -->
+        <section class="categoria" id="color">
+            <button class="toggle-btn">Color ▾</button>
+            <div class="desplegable">
+                <div class="tattoo-card">
+                    <img src="img/tattoo_color.jpg" alt="Tatto de gato persa sin pelo con flores">
+                    <img src="img/tattoo_color_2.jpg" alt="Tattoo de dragon con flores de colores">
+                </div>
+            </div>
+        </section>
+
+        <!-- Categoría Minimalista -->
+        <section class="categoria" id="minimalista">
+            <button class="toggle-btn">Minimalista ▾</button>
+            <div class="desplegable">
+                <div class="tattoo-card">
+                    <img src="img/tattoo_minimalista_1.jpg" alt="Tattoo formas geométricas minimalista">
+                    <img src="img/tattoo_minimalista_2.jpg" alt="Tattoo cara llorando con flor">
+                </div>
+            </div>    
+        </section>
+    </main>
+
+    <!-- Modal para imagen ampliada -->
+    <div id="modal-imagen" class="modal">
+        <span class="cerrar-modal">&times;</span>
+        <img class="modal-contenido" id="img-grande" alt="Tatuaje ampliado">
+    </div>
+    
+    <script src="web_tattoo.js"></script>
+</body>
+</html>
