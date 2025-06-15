@@ -373,6 +373,8 @@ footer {
     left: 0;
     width: 100%;
     display: none;
+    padding: 1rem;
+    z-index: 999;
   }
 
   nav ul.activo {
@@ -407,4 +409,9 @@ footer {
 
 * {
   transition: all 0.3s ease;
+}
+
+/* Botón hamburguesa oculto por defecto */
+.menu-toggle {
+  display: none;
 }
