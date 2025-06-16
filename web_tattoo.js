@@ -43,14 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.style.display = 'none';
     }
   });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('menu-toggle');
-  const navList = document.getElementById('nav-list');
+  const nav = document.querySelector('header nav');
 
-  toggle.addEventListener('click', () => {
-    navList.classList.toggle('activo');
-  });
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('activo');
+    });
+  }
 });
 
