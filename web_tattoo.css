@@ -408,7 +408,7 @@ footer {
   }
 
   nav.activo {
-    display: flex;
+    display: flex !important;
   }
 
   nav ul {
@@ -435,5 +435,6 @@ footer {
     display: flex !important;
     position: static;
     flex-direction: row;
+    transition: all 0.3s ease;
   }
 }
