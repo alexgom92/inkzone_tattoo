@@ -44,13 +44,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  const toggle = document.getElementById('menu-toggle');
-  const nav = document.querySelector('header nav');
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
 
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('activo');
-    });
-  }
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("activo");
+  });
+
 });
 
